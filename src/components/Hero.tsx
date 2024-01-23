@@ -12,7 +12,7 @@ function Hero({}: Props) {
     delaySpeed: 2000,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center">
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <img
         className="relative rounded-full w-32 h-32 mx-auto object-cover"
@@ -25,6 +25,12 @@ function Hero({}: Props) {
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semi scroll-px-10">{text}</h1>
         <Cursor cursorColor="#F7ABOA" />
+      </div>
+      <div>
+        <button className="heroButton">About</button>
+        <button className="heroButton">Experiences</button>
+        <button className="heroButton">Skills</button>
+        <button className="heroButton">Projects</button>
       </div>
     </div>
   );

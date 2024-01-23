@@ -8,10 +8,10 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="sticky top-0  p-5 flex items-start justify-between max-w-7xl mx-auto z-200 xl:items-center">
+    <header className="sticky top-0  p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
         initial={{
-          x: 500,
+          x: -500,
           opacity: 0,
           scale: 0.5,
         }}
@@ -23,7 +23,7 @@ function Header({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row justify-items-center"
+        className="flex flex-row items-center"
       >
         <div>
           <SocialIcon
